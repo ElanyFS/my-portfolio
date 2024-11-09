@@ -1,5 +1,3 @@
-import { section } from "framer-motion/client";
-import fotoPerfil from "../../assets/imgElany.jpg";
 import "./about.css";
 
 export const About = () => {

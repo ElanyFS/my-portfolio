@@ -3,7 +3,6 @@ import { Home } from "../containers/Home/Home";
 import "./layouts.css";
 import { Skills } from "@/containers/Skills/Skills";
 import { Certificates } from "@/containers/Certificates/Certificates";
-import { Experience } from "@/containers/Experience/Experience";
 import { Projects } from "@/containers/Projects/Projects";
 import { Contact } from "@/containers/Contact/Contact";
 import { Footer } from "@/components/Footer/Footer";
