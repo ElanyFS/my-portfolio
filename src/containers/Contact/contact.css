@@ -1,0 +1,17 @@
+.group-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.group-input label{
+    font-family: 'Poppins';
+}
+
+.group-input input, .group-input textarea{
+    padding: 0.4rem;
+    outline: none;
+    border-radius: 15px;
+    background-color: #4a073b75;
+}

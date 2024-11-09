@@ -1,0 +1,21 @@
+.link-footer{
+    position: relative;
+}
+
+.link-footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    border-radius:4px ;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.35s;
+}
+
+.link-footer:hover::before{
+    scale: 1
+}
