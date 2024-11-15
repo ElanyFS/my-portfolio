@@ -118,7 +118,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-[70vh] text-zinc-200 flex flex-col items-center gap-3 py-2 px-4"
+      className="min-h-[55vh] text-zinc-200 flex flex-col items-center gap-3 py-2 px-4"
     >
       <h1 className="font-rubik text-xl uppercase">
         Portfólio

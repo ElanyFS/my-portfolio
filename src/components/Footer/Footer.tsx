@@ -9,9 +9,9 @@ export const Footer = () => {
   };
   return (
     <footer className="text-zinc-200 flex flex-col items-center justify-around gap-4 py-2">
-      <div className="w-5/6 flex flex-col sm:flex-row sm:justify-between items-start gap-2 font-poppins">
+      <div className="w-5/6 flex flex-col lg:flex-row sm:justify-between items-center lg:items-start gap-2 font-poppins">
         <p>Elany Ferreira</p>
-        <ul className="flex justify-between gap-4">
+        <ul className="flex justify-between gap-4 flex-wrap">
           <li className="link-footer cursor-pointer" onClick={() => scrollToSection("home")}>Home</li>
           <li className="link-footer cursor-pointer" onClick={() => scrollToSection("about")}>About</li>
           <li className="link-footer cursor-pointer" onClick={() => scrollToSection("projects")}>Projects</li>

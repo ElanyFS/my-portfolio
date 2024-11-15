@@ -10,17 +10,17 @@ import { Footer } from "@/components/Footer/Footer";
 export const Layout = () => {
   return (
     <main className="layout bg-principal min-h-screen h-auto" id="main">
-      {/* <Home /> */}
-      {/* <About /> */}
+      <Home />
+      <About />
       <div className="min-h-[70vh] flex flex-col lg:flex-row justify-center sm:justify-around items-start gap-4 text-zinc-200 p-3">
-        {/* <Skills /> */}
-        {/* <Certificates /> */}
+        <Skills />
+        <Certificates />
       </div>
       {/* <Experience /> */}
 
-      {/* <Projects /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 };

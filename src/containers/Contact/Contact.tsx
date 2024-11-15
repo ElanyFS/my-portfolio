@@ -46,7 +46,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="text-zinc-200 min-h-screen flex flex-col items-center justify-around gap-4 py-2"
+      className="text-zinc-200 min-h-[65vh] flex flex-col items-center justify-around gap-3 py-2"
     >
       <h1 className="font-rubik text-xl uppercase">Contact me</h1>
 

@@ -3,7 +3,7 @@ import curriculo from "../../assets/Certificados/CurrículoProfissionalFullWebFr
 
 export const About = () => {
   return (
-    <section id="about" className="min-h-[70vh] h-auto flex flex-col justify-center items-center gap-10 text-zinc-200 bg-red-500">
+    <section id="about" className="min-h-[60vh] h-auto flex flex-col justify-center items-center gap-10 text-zinc-200">
       <h1 className="font-rubik text-2xl uppercase">
         About Me
         <i className="fa-regular fa-user ml-3 text-secundaria"></i>
