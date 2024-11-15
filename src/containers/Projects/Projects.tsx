@@ -4,8 +4,26 @@ import projeto2 from "../../assets/Captura de tela 2024-11-02 114113.png";
 import projeto3 from "../../assets/coincraft.png";
 import projeto4 from "../../assets/optimustech.gif";
 import projeto5 from "../../assets/toDoListTask.png";
+import "./Projects.css";
+import { useRef } from "react";
 
 export const Projects = () => {
+  const carousel = useRef<HTMLDivElement | null>(null);
+
+  const handleLeft = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (carousel.current) {
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+    }
+  };
+
+  const handleRigth = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    if (carousel.current) {
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    }
+  };
   const projetos = [
     {
       pathImg: projeto1,
@@ -90,45 +108,54 @@ export const Projects = () => {
         Portfólio
         <i className="fa-solid fa-arrow-right fa-xl rotate-45 ml-3 text-secundaria "></i>
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-10 flex-wrap px-10">
-        {projetos.map((projeto, index) => (
-          <div
-            key={index}
-            className="bg-principal border-2 border-secundaria flex flex-col items-center justify-between p-2 relative "
-          >
-            <img src={projeto.pathImg} alt="" className="" />
-            <div className="flex flex-col gap-2 items-center">
-              <h1 className="font-poppins text-xl text-center">
-                {projeto.titulo}
-              </h1>
 
-              <p className="text-justify text-[11px] font-poppins">
-                {projeto.detalhes}
-              </p>
-              <ul className="flex items-center justify-center gap-2 flex-wrap">
-                {projeto.tecnologias.map((tech) => (
-                  <li key={tech}>
-                    <img src={tech} alt="" className="w-7 mx-auto" />
-                  </li>
-                ))}
-              </ul>
-              <div className="flex items-center justify-center gap-2">
-                <a
-                  className="border-secundaria border-2 px-2 py-1"
-                  href={projeto.pathCodigo}
-                >
-                  Código
-                </a>
-                <a
-                  className="border-secundaria border-2 px-2 py-1"
-                  href={projeto.pathUrl}
-                >
-                  Acessar
-                </a>
+      <div className="container text-center space-y-4">
+        <div
+          className="carousel flex overflow-x-auto scroll-smooth"
+          ref={carousel}
+        >
+          {projetos.map((projeto, index) => (
+            <div key={index} className="flex-none mr-5 max-w-[30%]">
+              <img src={projeto.pathImg} alt="" className="" />
+              <div className="flex flex-col gap-2 items-center">
+                <h1 className="font-poppins text-xl text-center">
+                  {projeto.titulo}
+                </h1>
+
+                <p className="text-justify text-[11px] font-poppins">
+                  {projeto.detalhes}
+                </p>
+                <ul className="tecnologias flex items-center justify-center gap-2 flex-wrap">
+                  {projeto.tecnologias.map((tech) => (
+                    <li key={tech}>
+                      <img src={tech} alt="" className="w-7 mx-auto" />
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex items-center justify-center gap-2">
+                  <a
+                    className="border-secundaria border-2 px-2 py-1"
+                    href={projeto.pathCodigo}
+                  >
+                    Código
+                  </a>
+                  <a
+                    className="border-secundaria border-2 px-2 py-1"
+                    href={projeto.pathUrl}
+                  >
+                    Acessar
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <button className="bg-slate-200 rounded-2xl px-1 mr-1" onClick={handleLeft}>
+          <i className="fa-solid fa-chevron-up fa-rotate-270 text-secundaria"></i>
+        </button>
+        <button className="bg-slate-200 rounded-2xl px-1 ml-1" onClick={handleRigth}>
+          <i className="fa-solid fa-chevron-up fa-rotate-90 text-secundaria"></i>
+        </button>
       </div>
     </section>
   );
