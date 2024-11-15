@@ -1,5 +1,4 @@
 import trilha from '../../assets/Certificados/CertificadoTrilha.pdf';
-import nlwJavaScript from '../../assets/Certificados/CurrículoProfissionalFullWebFrontJunior.pdf'
 export const Certificates = () => {
   const certificados = [
     {
