@@ -119,20 +119,20 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-[80vh] text-zinc-200 flex flex-col items-center gap-3 py-2 px-10"
+      className="min-h-[80vh] text-zinc-200 flex flex-col items-center gap-3 py-2 px-4"
     >
       <h1 className="font-rubik text-xl uppercase">
         Portfólio
         <i className="fa-solid fa-arrow-right fa-xl rotate-45 ml-3 text-secundaria "></i>
       </h1>
 
-      <div className="container text-center space-y-4">
+      <div className="container text-center space-y-4 mx-auto">
         <div
-          className="carousel flex overflow-x-auto scroll-smooth"
+          className="carousel flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-4"
           ref={carousel}
         >
           {projetos.map((projeto, index) => (
-            <div key={index} className="flex flex-col justify-start mr-5 min-w-[30%] gap-3 border p-1 border-secundaria">
+            <div key={index} className="flex flex-col justify-startmr-5 min-w-full sm:min-w-[48%] gap-3 border p-1 border-secundaria">
               <img src={projeto.pathImg} alt="" className="max-h-44" />
               <div className="flex flex-col items-center flex-grow">
                 <h1 className="font-poppins text-xl text-center">

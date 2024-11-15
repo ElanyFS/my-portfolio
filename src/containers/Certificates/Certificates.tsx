@@ -15,7 +15,7 @@ export const Certificates = () => {
     },
   ];
   return (
-    <section id="certificates" className="min-h-[70vh] text-zinc-200 w-5/6 sm:w-3/6 space-y-3 p-2">
+    <section id="certificates" className="sm:min-h-[70vh] text-zinc-200 w-full sm:w-3/6 space-y-3 p-2">
       <h1 className="font-rubik text-2xl uppercase text-center">
         Main Certificates
         <i className="fa-solid fa-award ml-3 text-secundaria"></i>
