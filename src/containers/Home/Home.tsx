@@ -3,8 +3,8 @@ import Particles from "@/components/ui/particles";
 
 export const Home = () => {
   return (
-    <section id="home" className="home h-screen text-zinc-200 flex flex-col justify-center items-center text-center gap-12">
-      <div className="flex flex-col gap-3">
+    <section id="home" className="home h-screen text-zinc-200 flex flex-col justify-center items-center text-center gap-12 relative">
+      <div className="flex flex-col gap-5">
         <h2 className="titulo_apresentacao">Olá! Eu sou</h2>
         <h1 className="titulo_name">Elany Souza</h1>
         <p className="titulo_descricao">
@@ -19,8 +19,8 @@ export const Home = () => {
         // color={color}
         refresh
       />
-      <div className="flex flex-col gap-3">
-        <ul className="flex gap-3">
+      <div className="flex flex-col gap-3 absolute bottom-6">
+        <ul className="flex gap-6">
           {/* <li className="item-icon border rounded-3xl px-2.5 py-1 hover:bg-white"> */}
             <a href="https://linkedin.com.br/in/ebsouzaa" >
               <i className="fa-brands fa-linkedin text-[#dedede] text-3xl hover:text-[#0073B2]"></i>

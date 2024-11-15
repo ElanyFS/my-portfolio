@@ -4,6 +4,7 @@ import projeto2 from "../../assets/Captura de tela 2024-11-02 114113.png";
 import projeto3 from "../../assets/coincraft.png";
 import projeto4 from "../../assets/optimustech.gif";
 import projeto5 from "../../assets/toDoListTask.png";
+import nfSemijoias from '../../assets/nfsemijoias.png';
 import "./Projects.css";
 import { useRef } from "react";
 
@@ -13,7 +14,7 @@ export const Projects = () => {
   const handleLeft = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (carousel.current) {
-      carousel.current.scrollLeft += carousel.current.offsetWidth;
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
   };
 
@@ -21,34 +22,17 @@ export const Projects = () => {
     e.preventDefault();
 
     if (carousel.current) {
-      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
   };
   const projetos = [
     {
-      pathImg: projeto1,
-      titulo: "Gerenciador de Metas",
+      pathImg: nfSemijoias,
+      titulo: "NF Semi Joias",
       detalhes:
-        "Aplicação full-stack para gerenciamento de metas, com Node.js, TypeScript, Fastify, DrizzleORM (PostgreSQL), Docker e Zod no back-end; e React, Vite, TailwindCSS e TanStack Query no front-end.",
-      pathCodigo: "https://github.com/ElanyFS/nlw-web",
-      pathUrl: "https://nlw-web.vercel.app/",
-      tecnologias: [
-        "https://www.svgrepo.com/show/354119/nodejs-icon.svg",
-        "https://www.svgrepo.com/show/374144/typescript.svg",
-        "https://www.svgrepo.com/show/353729/fastify-icon.svg",
-        "https://www.svgrepo.com/show/354200/postgresql.svg",
-        "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
-        "https://www.svgrepo.com/show/374167/vite.svg",
-        "https://www.svgrepo.com/show/374118/tailwind.svg",
-      ],
-    },
-    {
-      pathImg: projeto2,
-      titulo: "Cine Search",
-      detalhes:
-        "Aplicação front-end para busca e exibição de filmes e séries, desenvolvida com React e Vite, que utiliza uma API pública para retornar dados organizados por categorias. Estilizada com TailwindCSS, a interface usa TanStack Query para gerenciar eficientemente as requisições de dados.",
-      pathCodigo: "https://github.com/ElanyFS/SearchMovies",
-      pathUrl: "https://cine-moviee.vercel.app/",
+        "Desenvolvimento de uma aplicação web para uma loja de semijoias, criando uma landing page interativa com duas páginas: uma página inicial atrativa e outra dedicada à exibição de produtos organizados por categorias.",
+      pathCodigo: "",
+      pathUrl: "https://nfsemijoias.vercel.app/",
       tecnologias: [
         "https://www.svgrepo.com/show/374144/typescript.svg",
         "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
@@ -70,6 +54,38 @@ export const Projects = () => {
         "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
     },
+    {
+      pathImg: projeto1,
+      titulo: "Gerenciador de Metas",
+      detalhes:
+        "Aplicação full-stack para gerenciamento de metas, com Node.js, TypeScript, Fastify, DrizzleORM (PostgreSQL), Docker e Zod no back-end; e React, Vite, TailwindCSS e TanStack Query no front-end.",
+      pathCodigo: "https://github.com/ElanyFS/nlw-web",
+      pathUrl: "https://nlw-web.vercel.app/",
+      tecnologias: [
+        "https://www.svgrepo.com/show/354119/nodejs-icon.svg",
+        "https://www.svgrepo.com/show/374144/typescript.svg",
+        "https://www.svgrepo.com/show/353729/fastify-icon.svg",
+        "https://www.svgrepo.com/show/354200/postgresql.svg",
+        "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+        "https://www.svgrepo.com/show/374167/vite.svg",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+    },
+    {
+      pathImg: projeto2,
+      titulo: "Cine Search",
+      detalhes:
+        "Aplicação front-end para busca e exibição de filmes e séries, desenvolvida com React e Vite, que utiliza uma API pública para retornar dados organizados por categorias. Estilizada com TailwindCSS, a interface usa TanStack Query para gerenciar eficientemente as requisições de dados. ",
+      pathCodigo: "https://github.com/ElanyFS/SearchMovies",
+      pathUrl: "https://cine-moviee.vercel.app/",
+      tecnologias: [
+        "https://www.svgrepo.com/show/374144/typescript.svg",
+        "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+        "https://www.svgrepo.com/show/374167/vite.svg",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+    },
+    
     {
       pathImg: projeto4,
       titulo: "OptimusTech",
@@ -97,6 +113,7 @@ export const Projects = () => {
         "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
     },
+    
   ];
 
   return (
@@ -115,9 +132,9 @@ export const Projects = () => {
           ref={carousel}
         >
           {projetos.map((projeto, index) => (
-            <div key={index} className="flex-none mr-5 max-w-[30%]">
-              <img src={projeto.pathImg} alt="" className="" />
-              <div className="flex flex-col gap-2 items-center">
+            <div key={index} className="flex flex-col justify-start mr-5 min-w-[30%] gap-3 border p-1 border-secundaria">
+              <img src={projeto.pathImg} alt="" className="max-h-44" />
+              <div className="flex flex-col items-center flex-grow">
                 <h1 className="font-poppins text-xl text-center">
                   {projeto.titulo}
                 </h1>
@@ -132,16 +149,18 @@ export const Projects = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-center gap-2 mt-auto">
                   <a
-                    className="border-secundaria border-2 px-2 py-1"
+                    className="border-secundaria border-2 px-2 py-1 hover:bg-slate-200 hover:border-slate-200 hover:transition-all ease-in-out duration-200 hover:text-secundaria"
                     href={projeto.pathCodigo}
+                    target="_blank"
                   >
                     Código
                   </a>
                   <a
-                    className="border-secundaria border-2 px-2 py-1"
+                    className="border-secundaria border-2 px-2 py-1 hover:bg-slate-200 hover:border-slate-200 hover:transition-all ease-in-out duration-200 hover:text-secundaria"
                     href={projeto.pathUrl}
+                    target="_blank"
                   >
                     Acessar
                   </a>
