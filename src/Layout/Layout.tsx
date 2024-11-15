@@ -11,14 +11,14 @@ export const Layout = () => {
   return (
     <main className="layout bg-principal min-h-screen h-auto" id="main">
       {/* <Home /> */}
-      <About />
-      <div className="min-h-[70vh] flex flex-col sm:flex-row justify-center sm:justify-around items-start gap-4 text-zinc-200 p-3">
+      {/* <About /> */}
+      <div className="min-h-[70vh] flex flex-col lg:flex-row justify-center sm:justify-around items-start gap-4 text-zinc-200 p-3">
         {/* <Skills /> */}
         {/* <Certificates /> */}
       </div>
       {/* <Experience /> */}
 
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contact /> */}
       {/* <Footer /> */}
     </main>
