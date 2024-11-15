@@ -1,4 +1,5 @@
 import "./about.css";
+import curriculo from "../../assets/Certificados/CurrículoProfissionalFullWebFrontJunior.pdf";
 
 export const About = () => {
   return (
@@ -39,8 +40,8 @@ export const About = () => {
       </p>
 
       <div className="flex justify-start items-center gap-3 font-poppins">
-        <button className="btn border p-2 relative"><i className="fa-brands fa-linkedin"></i> Linkedin</button>
-        <button className="btn border p-2 relative"><i className="fa-solid fa-file-arrow-down"></i> Curriculum</button>
+        <a className="btn border p-2 relative" href="https://www.linkedin.com/in/ebsouzaa/" target="_blank"><i className="fa-brands fa-linkedin"></i> Linkedin</a>
+        <a className="btn border p-2 relative" href={curriculo} target="_blank"><i className="fa-solid fa-file-arrow-down"></i> Curriculum</a>
       </div>
     </section>
   );

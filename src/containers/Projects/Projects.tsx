@@ -90,11 +90,11 @@ export const Projects = () => {
         Portfólio
         <i className="fa-solid fa-arrow-right fa-xl rotate-45 ml-3 text-secundaria "></i>
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 flex-wrap">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-10 flex-wrap px-10">
         {projetos.map((projeto, index) => (
           <div
             key={index}
-            className="bg-principal border-2 border-secundaria flex flex-col items-center justify-between p-2 relative"
+            className="bg-principal border-2 border-secundaria flex flex-col items-center justify-between p-2 relative "
           >
             <img src={projeto.pathImg} alt="" className="" />
             <div className="flex flex-col gap-2 items-center">

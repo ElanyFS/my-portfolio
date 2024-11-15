@@ -1,22 +1,18 @@
+import trilha from '../../assets/Certificados/CertificadoTrilha.pdf';
+import nlwJavaScript from '../../assets/Certificados/CurrículoProfissionalFullWebFrontJunior.pdf'
 export const Certificates = () => {
   const certificados = [
     {
       titulo: "Programa Trilha Inova - Front End",
       info: "Realizado pelo Programa Inova Maranhão - SECTI",
-      data: "XX/XX à XX/XX",
-      link: "",
+      data: "12/03/2024 à 01/09/2024",
+      link: trilha,
     },
     {
       titulo: "NLW Pocket: Javascript - Full-stack Intermediário",
       info: "Evento Rocketseat",
-      data: "XX/XX à XX/XX",
-      link: "",
-    },
-    {
-      titulo: "NLW Pocket: Javascript - Full-stack Intermediário",
-      info: "Evento Rocketseat",
-      data: "XX/XX à XX/XX",
-      link: "",
+      data: "09/09/2024 à 12/09/2024",
+      link: "https://app.rocketseat.com.br/certificates/f43d1c7f-1736-4a82-aba4-7f0a726bbd05",
     },
   ];
   return (
@@ -44,6 +40,7 @@ export const Certificates = () => {
             <p className="font-poppins text-xs">{certificado.info}</p>
             <a
               href={certificado.link}
+              target="_blank"
               className="font-poppins text-[10px] underline underline-offset-4 hover:text-secundaria"
             >
               VER CERTIFICADO
