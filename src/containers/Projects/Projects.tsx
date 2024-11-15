@@ -4,7 +4,7 @@ import projeto2 from "../../assets/Captura de tela 2024-11-02 114113.png";
 import projeto3 from "../../assets/coincraft.png";
 import projeto4 from "../../assets/optimustech.gif";
 import projeto5 from "../../assets/toDoListTask.png";
-import nfSemijoias from '../../assets/nfsemijoias.png';
+import nfSemijoias from "../../assets/nfsemijoias.png";
 import "./Projects.css";
 import { useRef } from "react";
 
@@ -85,7 +85,7 @@ export const Projects = () => {
         "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
     },
-    
+
     {
       pathImg: projeto4,
       titulo: "OptimusTech",
@@ -113,13 +113,12 @@ export const Projects = () => {
         "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
     },
-    
   ];
 
   return (
     <section
       id="projects"
-      className="min-h-[80vh] text-zinc-200 flex flex-col items-center gap-3 py-2 px-4"
+      className="min-h-[70vh] text-zinc-200 flex flex-col items-center gap-3 py-2 px-4"
     >
       <h1 className="font-rubik text-xl uppercase">
         Portfólio
@@ -132,7 +131,10 @@ export const Projects = () => {
           ref={carousel}
         >
           {projetos.map((projeto, index) => (
-            <div key={index} className="flex flex-col justify-startmr-5 min-w-full sm:min-w-[48%] gap-3 border p-1 border-secundaria">
+            <div
+              key={index}
+              className="flex flex-col justify-startmr-5 min-w-[95%] sm:min-w-[48%] lg:min-w-[30%] gap-3 border p-1 border-secundaria"
+            >
               <img src={projeto.pathImg} alt="" className="max-h-44" />
               <div className="flex flex-col items-center flex-grow">
                 <h1 className="font-poppins text-xl text-center">
@@ -169,10 +171,16 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-        <button className="bg-slate-200 rounded-2xl px-1 mr-1" onClick={handleLeft}>
+        <button
+          className="bg-slate-200 rounded-2xl px-1 mr-1"
+          onClick={handleLeft}
+        >
           <i className="fa-solid fa-chevron-up fa-rotate-270 text-secundaria"></i>
         </button>
-        <button className="bg-slate-200 rounded-2xl px-1 ml-1" onClick={handleRigth}>
+        <button
+          className="bg-slate-200 rounded-2xl px-1 ml-1"
+          onClick={handleRigth}
+        >
           <i className="fa-solid fa-chevron-up fa-rotate-90 text-secundaria"></i>
         </button>
       </div>
