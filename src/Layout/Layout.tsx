@@ -18,7 +18,7 @@ export const Layout = () => {
       </div>
       {/* <Experience /> */}
 
-      <Projects />
+      {/* <Projects /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
     </main>

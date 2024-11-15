@@ -52,7 +52,7 @@ export const Contact = () => {
 
       <form
         action=""
-        className="lg:w-3/6 flex flex-col items-center justify-around gap-3"
+        className="w-5/6 lg:w-3/6 flex flex-col items-center justify-around gap-3"
         onSubmit={handleForm}
       >
         <div className="group-input">
@@ -101,8 +101,8 @@ export const Contact = () => {
         )}
       </form>
 
-      <div className="w-5/6 flex justify-between items-center">
-        <h1 className="w-4/6 font-rubik text-2xl uppercase">Follow me</h1>
+      <div className="w-5/6 flex justify-between items-center gap-2">
+        <h1 className="w-3/6 md:w-4/6 font-rubik text-2xl uppercase">Follow me</h1>
         <ul className="flex-1 flex justify-between flex-wrap gap-1">
           <li className="bg-secundaria py-2 px-2.5 rounded-full cursor-pointer">
             <a href="https://www.instagram.com/e.bsouzaa/" target="_blank">
