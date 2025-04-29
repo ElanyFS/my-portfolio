@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.titulo_descricao span {
+/* .titulo_descricao span {
   position: relative;
 }
 
@@ -35,14 +35,12 @@
   animation: texto 20s infinite;
 }
 
-.titulo_descricao span::after {
+.titulos span::after {
   content: "";
   position: absolute;
   height: 100%;
   border-left: #4a073c 3px solid;
   right: -10px;
-  /* width: calc(100% + 15px); */
-  /* background-color: #050716; */
   animation: cursor 0.9s infinite;
 }
 
@@ -61,7 +59,7 @@
   0% {
     border-left: 2px solid #050716;
   }
-}
+} */
 
 /* @keyframes digitadora {
   10%,

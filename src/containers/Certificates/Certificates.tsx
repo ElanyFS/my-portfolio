@@ -1,4 +1,6 @@
-import trilha from '../../assets/Certificados/CertificadoTrilha.pdf';
+import trilha from "../../assets/Certificados/CertificadoTrilha.pdf";
+import serviceNow from '../../assets/Certificados/Micro-CertificationServiceNow.pdf';
+
 export const Certificates = () => {
   const certificados = [
     {
@@ -13,9 +15,18 @@ export const Certificates = () => {
       data: "09/09/2024 à 12/09/2024",
       link: "https://app.rocketseat.com.br/certificates/f43d1c7f-1736-4a82-aba4-7f0a726bbd05",
     },
+    {
+      titulo: "Micro-Certification - Welcome to ServiceNowNLW Pocket: Javascript - Full-stack Intermediário",
+      info: "ServiceNow",
+      data: "April 10, 2025",
+      link: serviceNow,
+    },
   ];
   return (
-    <section id="certificates" className="lg:min-h-[70vh] text-zinc-200 w-full lg:w-3/6 space-y-3 p-2">
+    <section
+      id="certificates"
+      className="lg:min-h-[70vh] text-zinc-200 w-full lg:w-3/6 space-y-3 p-2"
+    >
       <h1 className="font-rubik text-2xl uppercase text-center">
         Main Certificates
         <i className="fa-solid fa-award ml-3 text-secundaria"></i>

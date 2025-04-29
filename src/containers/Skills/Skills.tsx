@@ -26,7 +26,7 @@ export const Skills = () => {
       <h1 className="font-rubik text-2xl uppercase">
         My Skills
         {/* <i className="fa-solid fa-arrow-down fa-xl rotate-45 ml-1 text-secundaria "></i> */}
-        <i className="fa-solid fa-screwdriver-wrench ml-3 text-secundaria "></i>
+        <i className="fa-solid fa-screwdriver-wrench ml-3 text-secundaria"></i>
       </h1>
       <IconCloud iconSlugs={slugs} />
     </section>
