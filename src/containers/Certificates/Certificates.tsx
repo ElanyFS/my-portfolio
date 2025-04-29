@@ -16,9 +16,9 @@ export const Certificates = () => {
       link: "https://app.rocketseat.com.br/certificates/f43d1c7f-1736-4a82-aba4-7f0a726bbd05",
     },
     {
-      titulo: "Micro-Certification - Welcome to ServiceNowNLW Pocket: Javascript - Full-stack Intermediário",
+      titulo: "Micro-Certification - Welcome to ServiceNow",
       info: "ServiceNow",
-      data: "April 10, 2025",
+      data: "04/2025",
       link: serviceNow,
     },
   ];
