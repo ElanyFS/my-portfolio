@@ -6,6 +6,8 @@ import projeto4 from "../../assets/optimustech.gif";
 import projeto5 from "../../assets/toDoListTask.png";
 import nfSemijoias from "../../assets/nfsemijoias.png";
 import "./Projects.css";
+import footfy from "../../assets/Captura de tela 2025-04-29 162955.png";
+
 import { useRef } from "react";
 
 export const Projects = () => {
@@ -27,17 +29,17 @@ export const Projects = () => {
   };
   const projetos = [
     {
-      pathImg: nfSemijoias,
-      titulo: "NF Semi Joias",
+      pathImg: footfy,
+      titulo: "Footfy",
       detalhes:
-        "Desenvolvimento de uma aplicação web para uma loja de semijoias, criando uma landing page interativa com duas páginas: uma página inicial atrativa e outra dedicada à exibição de produtos organizados por categorias.",
+        "Desenvolvimento de uma aplicação web focada em estatísticas esportivas, com funcionalidades dinâmicas implementadas utilizando Node.js, Angular e Firebase. O projeto conta com uma interface interativa e responsiva que permite a visualização e organização de dados esportivos de forma clara e acessível.",
       pathCodigo: "",
-      pathUrl: "https://nfsemijoias.vercel.app/",
+      pathUrl: "https://www.footfy.info/",
       tecnologias: [
-        "https://www.svgrepo.com/show/374144/typescript.svg",
-        "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
-        "https://www.svgrepo.com/show/374167/vite.svg",
-        "https://www.svgrepo.com/show/374118/tailwind.svg",
+        "https://www.svgrepo.com/show/452156/angular.svg",
+        "https://www.svgrepo.com/show/373595/firebase.svg",
+        "https://www.svgrepo.com/show/376337/node-js.svg",
+        "https://www.svgrepo.com/show/353498/bootstrap.svg",
       ],
     },
     {
@@ -47,6 +49,20 @@ export const Projects = () => {
         "Jogo educativo que facilita o aprendizado financeiro, ajudando os jogadores a desenvolverem habilidades de orçamento e controle de gastos de forma divertida. A aplicação inclui uma landing page para cadastro de novos jogadores interessados em aprimorar sua educação financeira.",
       pathCodigo: "https://github.com/KelvynReis/coincraft-trilhas",
       pathUrl: "https://coincraft-trilhas.vercel.app/",
+      tecnologias: [
+        "https://www.svgrepo.com/show/374144/typescript.svg",
+        "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+        "https://www.svgrepo.com/show/374167/vite.svg",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+    },
+    {
+      pathImg: nfSemijoias,
+      titulo: "NF Semi Joias",
+      detalhes:
+        "Desenvolvimento de uma aplicação web para uma loja de semijoias, criando uma landing page interativa com duas páginas: uma página inicial atrativa e outra dedicada à exibição de produtos organizados por categorias.",
+      pathCodigo: "",
+      pathUrl: "https://nfsemijoias.vercel.app/",
       tecnologias: [
         "https://www.svgrepo.com/show/374144/typescript.svg",
         "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
