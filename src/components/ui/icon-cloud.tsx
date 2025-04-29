@@ -37,9 +37,9 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 };
 
-export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
-  const bgHex = theme === "dark" ? "#080510" : "#ffffff"; // exemplo adaptado
-  const fallbackHex = "#ffffff";
+export const renderCustomIcon = (icon: SimpleIcon) => {
+  const bgHex = "#080510"; // sua cor de fundo real
+  const fallbackHex = "#ffffff"; // branco para ícones visíveis no fundo escuro
   const minContrastRatio = 4.5;
 
   return renderSimpleIcon({
@@ -67,7 +67,6 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
   const { theme } = useTheme();
 
-  
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
   }, [iconSlugs]);
@@ -76,7 +75,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon),
     );
   }, [data, theme]);
 

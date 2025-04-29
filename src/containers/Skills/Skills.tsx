@@ -12,14 +12,15 @@ export const Skills = () => {
     "postgresql",
     "php",
     "vercel",
-    "testinglibrary",
+    // "testinglibrary",
     "laravel",
-    "jest",
+    // "jest",
     "git",
     "github",
-    // "gitlab",
+    "gitlab",
     "visualstudiocode",
     "figma",
+    "angular"
   ];
   return (
     <section id="skills" className="h-auto text-center w-full lg:w-2/6 p-2">
