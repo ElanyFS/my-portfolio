@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export const Contact = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -34,6 +37,7 @@ export const Contact = () => {
       .then((response) => {
         console.log("Email enviado com sucesso", response.status);
         // Limpa os campos
+        toast.success('E-mail enviado com sucesso!')
         setName('');
         setEmail('');
         setMessage('');
@@ -128,6 +132,8 @@ export const Contact = () => {
       </div>
 
       <div className="h-[0.5px] bg-secundaria w-5/6 mx-auto"></div>
+
+      <ToastContainer />
     </div>
   );
 };

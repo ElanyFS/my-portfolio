@@ -22,7 +22,7 @@ export const Footer = () => {
       </div>
 
       <div>
-        <p className="font-poppins text-sm">Todos os direitos reservados.</p>
+        {/* <p className="font-poppins text-sm">Todos os direitos reservados.</p> */}
       </div>
     </footer>
   );
