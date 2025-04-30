@@ -6,6 +6,7 @@ import { Certificates } from "@/containers/Certificates/Certificates";
 import { Projects } from "@/containers/Projects/Projects";
 import { Contact } from "@/containers/Contact/Contact";
 import { Footer } from "@/components/Footer/Footer";
+import { Experience } from "@/containers/Experience/Experience";
 
 export const Layout = () => {
   return (
@@ -16,7 +17,7 @@ export const Layout = () => {
         <Skills />
         <Certificates />
       </div>
-      {/* <Experience /> */}
+      <Experience />
 
       <Projects />
       <Contact />
