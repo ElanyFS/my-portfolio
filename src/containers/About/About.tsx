@@ -1,5 +1,5 @@
 import "./about.css";
-import curriculo from "../../assets/Certificados/ELANY_CURRICULO__FRONT.pdf";
+import curriculo from "../../assets/Certificados/Elany Ferreira de SouzaAtual.pdf";
 
 export const About = () => {
   return (
